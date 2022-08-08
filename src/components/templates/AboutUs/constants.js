@@ -1,6 +1,7 @@
-import img1 from './images/head.png';
+import img1 from './images/transfer.png';
+import img3 from './images/head.png';
 import img2 from './images/internet.png';
-import img3 from './images/transfer.png';
+
 
 export const ABOUT_US_DATA = [
    
