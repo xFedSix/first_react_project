@@ -1,8 +1,7 @@
-import React from 'react';
-import PostPage from './components/templates/PostPage';
+import React from "react";
+import PostPage from "./templates/PostPage";
 
 const App = () => {
-  return <PostPage />
-
+  return <PostPage />;
 };
 export default App;
