@@ -3,7 +3,7 @@ import ButtonComponent from "../../components/Button";
 
 import "./styles.scss";
 
-const Main_title = (props) => {
+const BunnerComponent = (props) => {
   const { title, subtitle } = props;
   //   const [btn, setBtn] = useState(false);
   return (
@@ -12,11 +12,12 @@ const Main_title = (props) => {
         <h1 className="Main_title__title">{title}</h1>
         <p className="Main_title__subtitle">{subtitle}</p>
         <div className="Button">
-          <ButtonComponent />
+          <ButtonComponent label="OUR SERVICES" buttonClass="MainBtnClass" />
+          <ButtonComponent label="HIRE IS NOW" buttonClass="ColoredBtnClass" />
         </div>
       </div>
     </>
   );
 };
 
-export default Main_title;
+export default BunnerComponent;

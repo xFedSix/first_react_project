@@ -1,19 +1,19 @@
 @import "../../templates/variables";
 
-.btnClass1,
-.btnClass2 {
+.MainBtnClass,
+.ColoredBtnClass {
   width: 220px;
   height: 70px;
   margin: 120px 40px 0 0;
   font-size: 22px;
   color: rgba(255, 255, 255, 1);
 }
-.btnClass1 {
+.MainBtnClass {
   background-color: rgba(255, 255, 255, 0);
   border-color: white;
   border: 4px solid;
 }
-.btnClass2 {
+.ColoredBtnClass {
   background-color: #00897b;
   border: 4px solid #00897b;
 }
