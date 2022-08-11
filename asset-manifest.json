@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/first_react_project/static/css/main.b222cb9e.css",
+    "main.css": "/first_react_project/static/css/main.85b07b7a.css",
     "main.js": "/first_react_project/static/js/main.86335bd1.js",
     "static/media/top-fon.svg": "/first_react_project/static/media/top-fon.473c0f47b0d617ddbdd1.svg",
     "index.html": "/first_react_project/index.html",
-    "main.b222cb9e.css.map": "/first_react_project/static/css/main.b222cb9e.css.map",
+    "main.85b07b7a.css.map": "/first_react_project/static/css/main.85b07b7a.css.map",
     "main.86335bd1.js.map": "/first_react_project/static/js/main.86335bd1.js.map"
   },
   "entrypoints": [
-    "static/css/main.b222cb9e.css",
+    "static/css/main.85b07b7a.css",
     "static/js/main.86335bd1.js"
   ]
 }
