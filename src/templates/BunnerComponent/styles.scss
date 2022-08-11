@@ -1,6 +1,6 @@
 @import "../../templates/variables";
 
-.Main_title {
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,9 +12,9 @@
   background-position: center;
   height: 740px;
 }
-.Main_title__title {
+.main-title {
   font-size: 70px;
 }
-.Main_title__subtitle {
+.main-title {
   font-size: 30px;
 }
