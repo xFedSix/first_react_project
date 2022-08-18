@@ -6,13 +6,13 @@ import "./styles.scss";
 const App = () => {
   return (
     <>
-        <BunnerComponent 
-          title='Title'
-          subtitle='Subtitle'
-        />
-        <AboutUs />
+      <BunnerComponent 
+      title="Web development project" 
+      subtitle="Very suitable to support all web development projects"
+       />
+      <AboutUs />
     </>
-  )
+  );
 };
 
 export default App;
