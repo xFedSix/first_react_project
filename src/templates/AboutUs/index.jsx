@@ -1,17 +1,28 @@
-import React from 'react';
+import React from "react";
 
-import './styles.scss';
+import TitleComponent from "../../components/TitleComponent";
+import AboutUsCard from "../../components/AboutUsCard";
 
-const AboutUs = (props) => {
-    const { title, subtitle, image} = props;
-    return (
-        <div className='about'>
-            <img alt='img' className='about-image' src={image}></img>
-            <h2 className='about-title'>{title}</h2>
-            <p className='about-subtitle'>{subtitle}</p>
-        </div>
-    );
+import { ABOUT_US_DATA, TITLE } from "./constants";
+
+import "./styles.scss";
+
+const AboutUs = () => {
+  return (
+    <>
+      <TitleComponent title={TITLE.title} subtitle={TITLE.subtitle} />
+      <div className="about-us">
+        {ABOUT_US_DATA.map(({ id, image, title, subtitle }) => (
+          <AboutUsCard
+            key={id}
+            image={image}
+            title={title}
+            subtitle={subtitle}
+          />
+        ))}
+      </div>
+    </>
+  );
 };
-
 
 export default AboutUs;
