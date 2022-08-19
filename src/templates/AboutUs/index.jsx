@@ -1,7 +1,7 @@
 import React from "react";
 
 import TitleComponent from "../../components/TitleComponent";
-import AboutUsCard from "../../components/AboutUsCard";
+import CardComponent from "../../components/CardComponent";
 
 import { ABOUT_US_DATA, TITLE } from "./constants";
 
@@ -13,7 +13,7 @@ const AboutUs = () => {
       <TitleComponent title={TITLE.title} subtitle={TITLE.subtitle} />
       <div className="about-us">
         {ABOUT_US_DATA.map(({ id, image, title, subtitle }) => (
-          <AboutUsCard
+          <CardComponent
             key={id}
             image={image}
             title={title}

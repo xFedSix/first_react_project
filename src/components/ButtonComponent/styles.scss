@@ -1,5 +1,14 @@
 @import "../../variables";
 
+.button {
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #000000;
+  width: 160px;
+  height: 55px;
+}
 .main-button {
   width: 220px;
   height: 70px;
@@ -13,4 +22,12 @@
     border: 2px solid $selectColor;
     background-color: $selectColor;
   }
+}
+.button--colored {
+  width: 220px;
+  height: 70px;
+  font-size: 22px;
+  color: rgba(255, 255, 255, 1);
+  background-color: $selectColor;
+  border: $selectColor;
 }
