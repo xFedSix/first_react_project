@@ -1,14 +1,11 @@
 import React from "react";
 import "./styles.scss";
 
-const ButtonClick = () => {
-  console.log("Click");
-};
 const ButtonComponent = (props) => {
-  const { label, buttonClass } = props;
+  const { label, buttonClass, buttonClick } = props;
   return (
     <>
-      <button onClick={ButtonClick} className={buttonClass}>
+      <button onClick={buttonClick} className={buttonClass}>
         {label}
       </button>
     </>
