@@ -9,18 +9,19 @@ const PricingPlan = () => {
   return (
     <div className="pricing-block">
       <TitleComponent title={TITLE.title} subtitle={TITLE.subtitle} />
-      <div className="pricing-cards">
-        {PRICECART.map(({ id, title, price, subtitle }) => (
-          <div className="pricing-card__plan">
-            <PricingComponent
-              key={id}
-              title={title}
-              price={price}
-              subtitle={subtitle}
-            />
-          </div>
-        ))}
-      </div>
+      <>
+        <div className="pricing-cards">
+          {PRICECART.map(({ id, title, price, subtitle }) => (
+            <div key={id} className="pricing-card__plan">
+              <PricingComponent
+                title={title}
+                price={price}
+                subtitle={subtitle}
+              />
+            </div>
+          ))}
+        </div>
+      </>
     </div>
   );
 };
