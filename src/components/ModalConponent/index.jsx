@@ -10,20 +10,29 @@ const ModalConponent = (props) => {
   const handleShow = () => setShow(true);
 
   return (
-    <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-      <ButtonComponent buttonClick={handleShow} />
-
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Title>
-          <div>{title}</div>
-        </Modal.Title>
-        <Modal.Body>
-          <div className="">
-            <img alt="aboutUs" src={image} />
-          </div>
-          <div className="">{subtitle}</div>
-        </Modal.Body>
-      </Modal>
+    <div className="modal-dialog-centered">
+      <ButtonComponent
+        buttonClick={handleShow}
+        buttonClass="button--large"
+        label="READ MORE"
+      />
+      <div className="d-flex justify-content-center">
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Title>
+            <div className="col-12 d-flex justify-content-center pt-2">
+              {title}
+            </div>
+          </Modal.Title>
+          <Modal.Body>
+            <div className="col-12 d-flex justify-content-center p-4">
+              <img alt="aboutUs" src={image} />
+            </div>
+            <div className="col-12 d-flex justify-content-center p-2">
+              {subtitle}
+            </div>
+          </Modal.Body>
+        </Modal>
+      </div>
     </div>
   );
 };

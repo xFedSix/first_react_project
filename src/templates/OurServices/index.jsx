@@ -21,7 +21,7 @@ const OurServices = () => {
             />
           ))}
         </div>
-        <ButtonComponent label="VIEW ALL" buttonClass="button--colored" />
+        <ButtonComponent label="VIEW ALL" buttonClass="button--cleared" />
       </div>
     </>
   );

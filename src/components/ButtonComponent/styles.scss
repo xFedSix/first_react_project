@@ -23,11 +23,21 @@
     background-color: $selectColor;
   }
 }
-.button--colored {
+.button--cleared {
+  font-size: 22px;
   width: 220px;
   height: 70px;
-  font-size: 22px;
-  color: rgba(255, 255, 255, 1);
-  background-color: $selectColor;
-  border: $selectColor;
+  &:hover {
+    border: 2px solid $selectColor;
+    background-color: $selectColor;
+  }
+}
+.button--large {
+  font-size: 20px;
+  width: 160px;
+  height: 55px;
+  &:hover {
+    border: 2px solid $selectColor;
+    background-color: $selectColor;
+  }
 }
