@@ -1,0 +1,13 @@
+@import "../../variables.scss";
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 0;
+
+  &__nav-bar {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+  }
+}

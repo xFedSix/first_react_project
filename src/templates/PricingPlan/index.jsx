@@ -11,12 +11,12 @@ const PricingPlan = () => {
       <TitleComponent title={TITLE.title} subtitle={TITLE.subtitle} />
       <>
         <div className="pricing-cards">
-          {PRICECART.map(({ id, title, price, subtitle }) => (
+          {PRICECART.map(({ id, title, price, image }) => (
             <div key={id} className="pricing-card__plan">
               <PricingComponent
                 title={title}
                 price={price}
-                subtitle={subtitle}
+                image={image}
               />
             </div>
           ))}

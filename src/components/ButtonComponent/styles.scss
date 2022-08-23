@@ -14,7 +14,7 @@
   height: 70px;
   font-size: 22px;
   color: rgba(255, 255, 255, 1);
-  background-color: rgba(255, 255, 255, 0);
+  background-color: $btnbackgrondcolor;
   border-color: white;
   border: 4px solid;
 
@@ -27,6 +27,7 @@
   font-size: 22px;
   width: 220px;
   height: 70px;
+  background-color: $btnbackgrondcolor;
   &:hover {
     border: 2px solid $selectColor;
     background-color: $selectColor;
@@ -36,6 +37,7 @@
   font-size: 20px;
   width: 160px;
   height: 55px;
+  background-color: $btnbackgrondcolor;
   &:hover {
     border: 2px solid $selectColor;
     background-color: $selectColor;
