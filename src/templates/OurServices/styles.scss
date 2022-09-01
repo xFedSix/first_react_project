@@ -11,32 +11,14 @@
 .service {
   background-size: cover;
   background-color: rgba(228, 253, 249, 1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
   padding-bottom: 100px;
 }
 
-.service__cards {
-  margin-top: 100px;
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: space-around;
-  gap: 45px 45px;
-  width: 1200px;
-  height: 925px;
-  margin-bottom: 60px;
-}
 .service-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  background-color: white;
-  height: 440px;
-  width: 370px;
-  
+  background-color: white;  
 }
 .service-card p {
   padding: 20px;

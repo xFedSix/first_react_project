@@ -22,7 +22,7 @@ export const NAV_BAR_DATA = [
   {
     id: 4,
     label: "Team",
-    url: "/",
+    url: "/our-team-members",
   },
   {
     id: 5,

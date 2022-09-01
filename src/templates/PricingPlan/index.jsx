@@ -10,14 +10,10 @@ const PricingPlan = () => {
     <div className="pricing-block">
       <TitleComponent title={TITLE.title} subtitle={TITLE.subtitle} />
       <>
-        <div className="pricing-cards">
+        <div className="row">
           {PRICECART.map(({ id, title, price, image }) => (
-            <div key={id} className="pricing-card__plan">
-              <PricingComponent
-                title={title}
-                price={price}
-                image={image}
-              />
+            <div key={id} className="col-lg-4 mb-5">
+              <PricingComponent title={title} price={price} image={image} />
             </div>
           ))}
         </div>

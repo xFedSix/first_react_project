@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "../NavBar";
 import Logo from "./Logo.svg";
+import BurgerComponent from "../BurgerComponent";
 import "./styles.scss";
 
 const HeaderComponent = () => {
@@ -12,6 +13,7 @@ const HeaderComponent = () => {
       <div className="header__nav-bar">
         <NavBar />
       </div>
+      <BurgerComponent />
     </header>
   );
 };

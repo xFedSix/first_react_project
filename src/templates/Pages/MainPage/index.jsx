@@ -1,10 +1,10 @@
 import React from "react";
 
-
 import AboutUs from "../../AboutUs";
 import BunnerComponent from "../../BunnerComponent";
 import OurServices from "../../OurServices";
 import PricingPlan from "../../PricingPlan";
+import OurTeam from "../../OurTeamMembers";
 
 const MainPage = () => {
   return (
@@ -17,6 +17,7 @@ const MainPage = () => {
         <AboutUs />
         <OurServices />
         <PricingPlan />
+        <OurTeam />
       </>
     </>
   );

@@ -1,0 +1,99 @@
+@import "../../variables.scss";
+
+
+// .header-links-container {
+//     width: 100px;
+//     height: 100%;
+//     background-color: #eee;
+//     position: fixed;
+//     top: 0;
+//     right: 0;
+//     opacity: 0;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     z-index: 4;
+//     transition: all 0.5s;
+  
+//     .header-links {
+//       display: flex;
+//       flex-direction: column;
+//     }
+//   }
+//   .change {
+//     opacity: 1;
+//     width: 200px;
+//   }
+@media (max-width: $breackpoint_sm) {
+  header {
+
+    .nav__list {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 15px;
+      transform: translateX(-150%);
+      transition: transform 0.5s;
+      
+    }
+    .header-links(2) {
+        transform: translateX(0%);
+    }
+
+  .nav__burger {
+    position: fixed;
+    height: 3rem;
+    width: 3rem;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    text-align: center;
+    z-index: 100;
+  
+    &__icon {
+      position: relative;
+      margin-top: 1.5rem;
+  
+      &,
+      &::before,
+      &::after {
+        width: 2rem;
+        height: 2px;
+        background-color: #333;
+        display: inline-block;
+      }
+  
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        transition: all 0.2s;
+      }
+  
+      &::before {
+        top: -0.8rem;
+      }
+      &::after {
+        top: 0.8rem;
+      }
+    }
+  
+    &-active &__icon {
+      background-color: transparent;
+    }
+  
+    &-active &__icon::before {
+      top: 0;
+      transform: rotate(135deg);
+    }
+  
+    &-active &__icon::after {
+      top: 0;
+      transform: rotate(-135deg);
+    }
+  }
+} 
+  }
+  

@@ -11,14 +11,11 @@ const AboutUs = () => {
   return (
     <>
       <TitleComponent title={TITLE.title} subtitle={TITLE.subtitle} />
-      <div className="about-us">
+      <div className="about-us row">
         {ABOUT_US_DATA.map(({ id, image, title, subtitle }) => (
-          <CardComponent
-            key={id}
-            image={image}
-            title={title}
-            subtitle={subtitle}
-          />
+          <div key={id} className="col-4">
+            <CardComponent image={image} title={title} subtitle={subtitle} />
+          </div>
         ))}
       </div>
     </>

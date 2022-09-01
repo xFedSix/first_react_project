@@ -7,7 +7,7 @@ const ServiceCardComponent = (props) => {
 
   return (
     <>
-      <div key={id} className="service-card">
+      <div key={id} className="service-card py-4 mb-4">
         <CardComponent
           key={id}
           image={image}

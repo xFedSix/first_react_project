@@ -2,7 +2,6 @@ import React from "react";
 
 import TitleComponent from "../../components/TitleComponent";
 import { TITLE, OUR_SERVICES_DATA } from "./constants";
-import ButtonComponent from "../../components/ButtonComponent";
 import ServiceCardComponent from "../../components/ServiceCardComponent";
 import "./styles.scss";
 
@@ -10,18 +9,22 @@ const OurServices = () => {
   return (
     <>
       <div className="service">
-        <TitleComponent title={TITLE.title} subtitle={TITLE.subtitle} />
-        <div className="service__cards">
+        <TitleComponent
+          key={TITLE.id}
+          title={TITLE.title}
+          subtitle={TITLE.subtitle}
+        />
+        <div className="row p-4">
           {OUR_SERVICES_DATA.map(({ id, image, title, subtitle }) => (
-            <ServiceCardComponent
-              key={id}
-              image={image}
-              title={title}
-              subtitle={subtitle}
-            />
+            <div key={id} className="col-lg-4">
+              <ServiceCardComponent
+                image={image}
+                title={title}
+                subtitle={subtitle}
+              />
+            </div>
           ))}
         </div>
-        <ButtonComponent label="VIEW ALL" buttonClass="button--cleared" />
       </div>
     </>
   );
