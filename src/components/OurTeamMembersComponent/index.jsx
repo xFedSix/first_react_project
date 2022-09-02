@@ -21,7 +21,7 @@ const OurTeamMembersComponent = () => {
         {cardInfo.map(({ id, name, username, email }) => (
           <div
             key={id}
-            className="col-lg-4 col-sm-12 d-flex justify-content-center flex-direction-column"
+            className="col-lg-4 col-sm-12 d-flex align-items-center flex-column"
           >
             <h4>{name}</h4>
             <p>{username}</p>
