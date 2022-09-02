@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import NavBar from "../NavBar";
+// import NavBar from "../NavBar";
 import "./styles.scss";
 
 const BurgerComponent = () => {
@@ -13,9 +13,9 @@ const BurgerComponent = () => {
     toggleClass();
   };
 
-  //   const closeMenu = () => {
-  //     setActive(false);
-  //   };
+  const closeMenu = () => {
+    setActive(false);
+  };
 
   return (
     <>
@@ -27,7 +27,40 @@ const BurgerComponent = () => {
       </div>
       <div className={`header-links-container ${isActive ? "change" : ""}`}>
         <div className="header-links">
-          <NavBar />
+          <nav>
+            <ul>
+              <li>
+                <a href="/" onClick={closeMenu}>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="/about-us" onClick={closeMenu}>
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="/our-services" onClick={closeMenu}>
+                  Our Services
+                </a>
+              </li>
+              <li>
+                <a href="/our-team-members" onClick={closeMenu}>
+                  Our Team
+                </a>
+              </li>
+              <li>
+                <a href="/blog" onClick={closeMenu}>
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a href="/contact_us" onClick={closeMenu}>
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </>

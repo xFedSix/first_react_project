@@ -16,10 +16,13 @@ const OurTeamMembersComponent = () => {
     fetchDataFromServer();
   }, []);
   return (
-    <div className="row">
+    <div className="row p-4">
       <>
         {cardInfo.map(({ id, name, username, email }) => (
-          <div key={id} className="col-4">
+          <div
+            key={id}
+            className="col-lg-4 col-sm-12 d-flex justify-content-center flex-direction-column"
+          >
             <h4>{name}</h4>
             <p>{username}</p>
             <nav>
@@ -27,7 +30,6 @@ const OurTeamMembersComponent = () => {
             </nav>
           </div>
         ))}
-        ;
       </>
     </div>
   );

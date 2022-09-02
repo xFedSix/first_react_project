@@ -24,4 +24,4 @@ export const IMAGES = [
     id: 2,
     image: img3,
   },
-];
+]

@@ -12,8 +12,8 @@ const HeaderComponent = () => {
       </div>
       <div className="header__nav-bar">
         <NavBar />
+        <BurgerComponent />
       </div>
-      <BurgerComponent />
     </header>
   );
 };

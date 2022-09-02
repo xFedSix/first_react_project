@@ -8,11 +8,11 @@ import FooterComponent from "../../../components/FooterComponent/Index";
 const Layout = () => {
   return (
     <>
-      <>
+      <div className="container">
         <HeaderComponent />
         <Outlet />
         <FooterComponent />
-      </>
+      </div>
     </>
   );
 };
