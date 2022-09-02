@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/first_react_project/static/css/main.c7b19a33.css",
+    "main.css": "/first_react_project/static/css/main.04f0cba8.css",
     "main.js": "/first_react_project/static/js/main.668311c6.js",
     "static/media/top-fon.svg": "/first_react_project/static/media/top-fon.473c0f47b0d617ddbdd1.svg",
     "static/media/bootstrap-icons.woff?": "/first_react_project/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
@@ -14,11 +14,11 @@
     "static/media/smartphone.svg": "/first_react_project/static/media/smartphone.89d27918824be927b4b1d2346cb60370.svg",
     "static/media/arrow.svg": "/first_react_project/static/media/arrow.9820213721c659422a42167d9cb3bdf1.svg",
     "index.html": "/first_react_project/index.html",
-    "main.c7b19a33.css.map": "/first_react_project/static/css/main.c7b19a33.css.map",
+    "main.04f0cba8.css.map": "/first_react_project/static/css/main.04f0cba8.css.map",
     "main.668311c6.js.map": "/first_react_project/static/js/main.668311c6.js.map"
   },
   "entrypoints": [
-    "static/css/main.c7b19a33.css",
+    "static/css/main.04f0cba8.css",
     "static/js/main.668311c6.js"
   ]
 }
