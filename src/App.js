@@ -1,12 +1,13 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Layout from "./templates/Pages/Layout";
+import Layout from "./Pages/Layout";
 import OurServices from "./templates/OurServices";
-import ErrorPage from "./templates/Pages/ErrorPage";
+import ErrorPage from "./Pages/ErrorPage";
 import AboutUs from "./templates/AboutUs";
 import PricingPlan from "./templates/PricingPlan";
 import OurTeamMembers from "./templates/OurTeamMembers";
-import MainPage from "./templates/Pages/MainPage";
+import MainPage from "./Pages/MainPage";
+import Blog from "./templates/Blog";
 
 import "./styles.scss";
 
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/our-services" element={<OurServices />} />
           <Route path="/pricing" element={<PricingPlan />} />
           <Route path="/our-team-members" element={<OurTeamMembers />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="*" element={<ErrorPage />} />
           {/* <Route path="/" element={<Navigate to="/" replace />} /> */}
         </Route>

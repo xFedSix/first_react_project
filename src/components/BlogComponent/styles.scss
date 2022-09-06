@@ -1,0 +1,11 @@
+.data-dev {
+  display: flex;
+  justify-content: space-between;
+}
+.data-dev p {
+  font-weight: 600;
+  font-size: 18px;
+}
+.description :last-child {
+  font-size: 18px;
+}

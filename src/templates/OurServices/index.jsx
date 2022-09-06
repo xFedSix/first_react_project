@@ -7,10 +7,8 @@ import "./styles.scss";
 
 const OurServices = () => {
   return (
-    <>
       <div className="service">
         <TitleComponent
-          key={TITLE.id}
           title={TITLE.title}
           subtitle={TITLE.subtitle}
         />
@@ -26,7 +24,6 @@ const OurServices = () => {
           ))}
         </div>
       </div>
-    </>
   );
 };
 

@@ -2,9 +2,7 @@
 
 .header-links-container {
   width: 100px;
-  // height: 100%;
-  // background-color: #eee;
-  position: fixed;
+  // position: fixed;
   top: 0;
   right: 0;
   opacity: 0;
@@ -50,9 +48,9 @@
       height: 3rem;
       width: 3rem;
       top: 1rem;
-      right: 9rem;
+      right: 12rem;
       cursor: pointer;
-      text-align: center;
+      // text-align: center;
       z-index: 100;
 
       &__icon {

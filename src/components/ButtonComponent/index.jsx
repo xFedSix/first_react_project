@@ -3,6 +3,7 @@ import "./styles.scss";
 
 const ButtonComponent = (props) => {
   const { label, buttonClass, buttonClick } = props;
+
   return (
     <>
       <button onClick={buttonClick} className={buttonClass}>
