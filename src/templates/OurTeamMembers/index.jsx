@@ -1,6 +1,6 @@
 import React from "react";
 
-import { TITLE, IMAGES } from "./constants";
+import { TITLE, IMAGES } from "../../components/OurTeamMembersComponent/constants";
 
 import TitleComponent from "../../components/TitleComponent";
 import OurTeamMembersComponent from "../../components/OurTeamMembersComponent";
@@ -14,14 +14,14 @@ const OurTeam = () => {
         subtitle={TITLE.subtitle}
       />
       <div className="Our-team-card row d-flex">
-        {IMAGES.map(({ id, image }) => (
+        {/* {IMAGES.map(({ id, image }) => (
           <div
             key={id}
             className="col-lg-4 col-sm-12 d-flex align-items-center flex-column"
           >
             <img alt="img" className="team__image" src={image}></img>
           </div>
-        ))}
+        ))} */}
 
         <OurTeamMembersComponent />
       </div>

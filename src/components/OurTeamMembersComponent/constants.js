@@ -1,7 +1,6 @@
 import img1 from "./images/man.svg";
 import img2 from "./images/man_2.svg";
 import img3 from "./images/man_3.svg";
-
 export const TITLE = {
   title: "Our Team Member",
   subtitle:
@@ -13,15 +12,15 @@ export const URL =
 
 export const IMAGES = [
   {
-    id: 0,
+    // id: 0,
     image: img1,
   },
   {
-    id: 1,
+    // id: 1,
     image: img2,
   },
   {
-    id: 2,
+    // id: 2,
     image: img3,
   },
-]
+];

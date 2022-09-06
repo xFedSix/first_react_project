@@ -10,7 +10,7 @@ const FooterComponent = () => {
       <div className="footer__nav-bar">
         <NavBar />
       </div>
-      <div className="rights">
+      <div>
         <img alt="copy" src={CopyRights} />
       </div>
     </footer>
