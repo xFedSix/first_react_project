@@ -1,7 +1,7 @@
 {
   "name": "first_react_project",
   "version": "0.1.0",
-  "homepage": "https://xfedsix.github.io/",
+  "homepage": "https://xfedsix.github.io/first_react_project",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
