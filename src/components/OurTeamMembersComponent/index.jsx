@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { URL } from "./constants";
-// import { IMAGES } from "./constants";
-import img1 from "./images/man.svg";
-import img2 from "./images/man_2.svg";
-import img3 from "./images/man_3.svg";
+import { IMAGES } from "./constants";
+// import img1 from "./images/man.svg";
+// import img2 from "./images/man_2.svg";
+// import img3 from "./images/man_3.svg";
 
 const OurTeamMembersComponent = () => {
   const [cardInfo, setCardInfo] = useState([]);
@@ -14,10 +14,10 @@ const OurTeamMembersComponent = () => {
     const fetchDataFromServer = async () => {
       const response = await fetch(URL);
       const responseData = await response.json();
-      const arr = responseData;
-      arr.unshift({ image: img1 }, { image: img2 }, { image: img3 });
-      setCardInfo(arr);
-      console.log(arr);
+      // const arr = responseData;
+      // arr.unshift({ image: img1 }, { image: img2 }, { image: img3 });
+      setCardInfo(responseData);
+      console.log(responseData);
     };
 
     fetchDataFromServer();
@@ -25,12 +25,18 @@ const OurTeamMembersComponent = () => {
   return (
     <div className="row p-4">
       <>
-        {cardInfo.map(({ id, name, username, email, image }) => (
+        {IMAGES.map(({ id, image }) => (
+          <img
+            alt="img"
+            className="team__image col-lg-4 col-sm-12 d-flex "
+            src={image}
+          ></img>
+        ))}
+        {cardInfo.map(({ id, name, username, email }) => (
           <div
             key={id}
             className="col-lg-4 col-sm-12 d-flex align-items-center flex-column"
           >
-            <img alt="img" className="team__image" src={image}></img>
             <h4>{name}</h4>
             <p>{username}</p>
             <nav>
