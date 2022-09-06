@@ -24,27 +24,25 @@ const OurTeamMembersComponent = () => {
   }, []);
   return (
     <div className="row p-4">
-      <>
-        {IMAGES.map(({ id, image }) => (
-          <img
-            alt="img"
-            className="team__image col-lg-4 col-sm-12 d-flex "
-            src={image}
-          ></img>
-        ))}
-        {cardInfo.map(({ id, name, username, email }) => (
-          <div
-            key={id}
-            className="col-lg-4 col-sm-12 d-flex align-items-center flex-column"
-          >
-            <h4>{name}</h4>
-            <p>{username}</p>
-            <nav>
-              <Link to={"/our-team-members"}>{email}</Link>
-            </nav>
-          </div>
-        ))}
-      </>
+      {IMAGES.map(({ id, image }) => (
+        <img
+          alt="img"
+          className="team__image col-lg-4 col-sm-12 d-flex "
+          src={image}
+        ></img>
+      ))}
+      {cardInfo.map(({ id, name, username, email }) => (
+        <div
+          key={id}
+          className="col-lg-4 col-sm-12 d-flex align-items-center flex-column"
+        >
+          <h4>{name}</h4>
+          <p>{username}</p>
+          <nav>
+            <Link to={"/our-team-members"}>{email}</Link>
+          </nav>
+        </div>
+      ))}
     </div>
   );
 };
