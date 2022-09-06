@@ -15,7 +15,7 @@ const OurTeamMembersComponent = () => {
       const response = await fetch(URL);
       const responseData = await response.json();
       const arr = responseData;
-      arr.unshift({ image: img1 }, { image2: img2 }, { image3: img3 });
+      arr.unshift({ image: img1 }, { image: img2 }, { image: img3 });
       setCardInfo(arr);
       console.log(arr);
     };
