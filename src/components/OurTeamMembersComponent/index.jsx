@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { URL } from "./constants";
-import { IMAGES } from "./constants";
+// import { IMAGES } from "./constants";
 import img1 from "./images/man.svg";
 import img2 from "./images/man_2.svg";
 import img3 from "./images/man_3.svg";

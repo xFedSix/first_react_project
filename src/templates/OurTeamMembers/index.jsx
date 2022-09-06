@@ -1,6 +1,6 @@
 import React from "react";
 
-import { TITLE, IMAGES } from "../../components/OurTeamMembersComponent/constants";
+import { TITLE } from "../../components/OurTeamMembersComponent/constants";
 
 import TitleComponent from "../../components/TitleComponent";
 import OurTeamMembersComponent from "../../components/OurTeamMembersComponent";
