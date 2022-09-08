@@ -1,3 +1,37 @@
-.blog data:nth-child(2) {
+@import "../../variables.scss";
+
+.blog {
+  background-color: #e4f1fd;
+}
+.reversed {
   flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.block {
+  display: flex;
+  justify-content: space-around;
+}
+.block img {
+  max-height: 383px;
+}
+.data-dev {
+  display: flex;
+  justify-content: space-between;
+}
+.data-dev p {
+  font-weight: 600;
+  font-size: 18px;
+}
+@media (max-width: $breackpoint_sm) {
+  body {
+    .block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .block img {
+      max-height: 200px;
+    }
+  }
 }

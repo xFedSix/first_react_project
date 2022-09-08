@@ -10,17 +10,14 @@ export const TITLE = {
 export const URL =
   "https://jsonplaceholder.typicode.com/users?_start=0&_limit=3";
 
-export const IMAGES = [
+export const OUR_TEAM_CARD = [
   {
-    // id: 0,
     image: img1,
   },
   {
-    // id: 1,
     image: img2,
   },
   {
-    // id: 2,
     image: img3,
   },
 ];

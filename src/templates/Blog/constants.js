@@ -17,6 +17,7 @@ export const BLOG_DATA = [
       "Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...",
     date: "14.07.2017",
     devtext: "Development",
+    className: "block d-flex col-sm-12",
   },
   {
     id: 2,
@@ -26,6 +27,7 @@ export const BLOG_DATA = [
       "Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...",
     date: "14.07.2017",
     devtext: "Development",
+    className: "block reversed d-flex col-sm-12",
   },
   {
     id: 3,
@@ -35,5 +37,6 @@ export const BLOG_DATA = [
       "Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...",
     date: "14.07.2017",
     devtext: "Development",
+    className: "block d-flex col-sm-12",
   },
 ];
