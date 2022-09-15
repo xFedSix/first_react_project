@@ -1,7 +1,6 @@
 import React from "react";
 
-const CardComponent = (props) => {
-  const { title, subtitle, image } = props;
+const CardComponent = ({ title, subtitle, image }) => {
   return (
     <div className="card">
       <img alt="img" className="about__image" src={image}></img>

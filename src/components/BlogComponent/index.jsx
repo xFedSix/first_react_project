@@ -2,6 +2,7 @@ import React from "react";
 import "./styles.scss";
 
 const BlogComponent = ({
+  id,
   title,
   subtitle,
   image,
@@ -10,7 +11,7 @@ const BlogComponent = ({
   className,
 }) => {
   return (
-    <div className={className} >
+    <div key={id} className={className}>
       <div>
         <img alt="img" src={image}></img>
       </div>

@@ -13,25 +13,23 @@ const Blog = () => {
       <div className="p-4">
         <TitleComponent title={TITLE.title} subtitle={TITLE.subtitle} />
       </div>
-      <div className="data row">
+      <div className="blog__data row">
         {BLOG_DATA.map(
-          ({ id, image, title, subtitle, date, devtext, className }) => (
-            <div key={id}>
-              <BlogComponent
-                image={image}
-                title={title}
-                subtitle={subtitle}
-                date={date}
-                devtext={devtext}
-                className={className}
-              />
-            </div>
+          ({ image, title, subtitle, date, devtext, className }) => (
+            <BlogComponent
+              image={image}
+              title={title}
+              subtitle={subtitle}
+              date={date}
+              devtext={devtext}
+              className={className}
+            />
           )
         )}
       </div>
 
       <div className="d-flex justify-content-center p-4">
-        <ButtonComponent buttonClass="button--large" label="MORE VIEW" />
+        <ButtonComponent buttonClass="button__large" label="MORE VIEW" />
       </div>
     </div>
   );

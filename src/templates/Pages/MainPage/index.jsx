@@ -5,6 +5,8 @@ import BunnerComponent from "../../BunnerComponent";
 import OurServices from "../../OurServices";
 import PricingPlan from "../../PricingPlan";
 import OurTeam from "../../OurTeamMembers";
+import Blog from "../../Blog";
+import ContactUs from "../../ContactUs";
 
 const MainPage = () => {
   return (
@@ -18,6 +20,8 @@ const MainPage = () => {
         <OurServices />
         <PricingPlan />
         <OurTeam />
+        <Blog />
+        <ContactUs />
       </>
     </>
   );

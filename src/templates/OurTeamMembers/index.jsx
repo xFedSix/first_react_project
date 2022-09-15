@@ -13,16 +13,7 @@ const OurTeam = () => {
         title={TITLE.title}
         subtitle={TITLE.subtitle}
       />
-      <div className="Our-team-card row d-flex">
-        {/* {IMAGES.map(({ id, image }) => (
-          <div
-            key={id}
-            className="col-lg-4 col-sm-12 d-flex align-items-center flex-column"
-          >
-            <img alt="img" className="team__image" src={image}></img>
-          </div>
-        ))} */}
-
+      <div className="our-team-card row d-flex">
         <OurTeamMembersComponent />
       </div>
     </>

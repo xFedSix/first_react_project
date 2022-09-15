@@ -8,7 +8,7 @@ import PricingPlan from "./templates/PricingPlan";
 import OurTeamMembers from "./templates/OurTeamMembers";
 import MainPage from "./Pages/MainPage";
 import Blog from "./templates/Blog";
-
+import ContactUs from "./templates/ContactUs";
 import "./styles.scss";
 
 const App = () => {
@@ -22,6 +22,7 @@ const App = () => {
           <Route path="/pricing" element={<PricingPlan />} />
           <Route path="/our-team-members" element={<OurTeamMembers />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/contact-us" element={<ContactUs />} />
           <Route path="*" element={<ErrorPage />} />
           {/* <Route path="/" element={<Navigate to="/" replace />} /> */}
         </Route>

@@ -13,7 +13,7 @@ const ModalConponent = (props) => {
     <div className="modal-dialog-centered d-flex justify-content-center">
       <ButtonComponent
         buttonClick={handleShow}
-        buttonClass="button--large"
+        buttonClass="button__large"
         label="READ MORE"
       />
       <div className="d-flex justify-content-center">

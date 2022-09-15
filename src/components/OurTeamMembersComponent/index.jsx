@@ -3,9 +3,6 @@ import { Link } from "react-router-dom";
 
 import { URL } from "./constants";
 import { OUR_TEAM_CARD } from "./constants";
-// import img1 from "./images/man.svg";
-// import img2 from "./images/man_2.svg";
-// import img3 from "./images/man_3.svg";
 
 const OurTeamMembersComponent = () => {
   const [cardInfo, setCardInfo] = useState([]);

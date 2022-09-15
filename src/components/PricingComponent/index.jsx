@@ -12,7 +12,7 @@ const PricingComponent = (props) => {
         <img alt="img" src={image}></img>
       </div>
       <div>
-        <button className="button--large">ORDER NOW</button>
+        <button className="button__large">ORDER NOW</button>
       </div>
     </div>
   );

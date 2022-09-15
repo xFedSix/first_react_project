@@ -27,11 +27,11 @@ export const NAV_BAR_DATA = [
   {
     id: 5,
     label: "Blog",
-    url: "/",
+    url: "/blog",
   },
   {
     id: 6,
     label: "Contact us",
-    url: "/",
+    url: "/contact-us",
   },
 ];
