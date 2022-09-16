@@ -80,52 +80,63 @@ const ContactUs = () => {
       <div className="contacts__title">
         <TitleComponent title={TITLE.title} subtitle={TITLE.subtitle} />;
       </div>
-      <div className="row d-flex justify-content: space-around">
+      <div className="row d-flex">
         {CONTACT_US_DATA.map(({ id, image, title, subtitle }) => (
           <div key={id} className="col-4">
             <CardComponent image={image} title={title} subtitle={subtitle} />
           </div>
         ))}
       </div>
-      <Form>
-        {nameDirty && nameError && (
-          <div style={{ color: "red" }}>{nameError}</div>
-        )}
-        <Form.Group className="mb-3" controlId="formBasicName">
-          <Form.Control
-            onBlur={(e) => blurHandler(e)}
-            name="name"
-            defaultValue={name}
-            onChange={(e) => nameHandler(e)}
-            type="text"
-            placeholder="YOUR NAME"
-          />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Control
-            defaultValue={email}
-            onChange={(e) => emailHandler(e)}
-            type="email"
-            placeholder="YOUR EMAIL"
-          />
-        </Form.Group>
 
-        <Form.Group className="mb-3" controlId="formBasicPhone">
-          <Form.Control
-            defaultValue={number}
-            onChange={(e) => numberHandler(e)}
-            type="number"
-            placeholder="Phone Number"
-          />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicMessage">
-          <Form.Control
-            defaultValue={message}
-            onChange={(e) => messageHandler(e)}
-            type="text"
-            placeholder="Write Message"
-          />
-        </Form.Group>
+      <Form>
+        <div className="block-form container row d-flex justify-content-evenly">
+          <div className="w-25">
+            {nameDirty && nameError && (
+              <div style={{ color: "red" }}>{nameError}</div>
+            )}
+            <Form.Group className="mb-3" controlId="formBasicName">
+              <Form.Control
+                onBlur={(e) => blurHandler(e)}
+                name="name"
+                defaultValue={name}
+                onChange={(e) => nameHandler(e)}
+                type="text"
+                placeholder="YOUR NAME"
+              />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Control
+                defaultValue={email}
+                onChange={(e) => emailHandler(e)}
+                type="email"
+                placeholder="YOUR EMAIL"
+              />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="formBasicPhone">
+              <Form.Control
+                defaultValue={number}
+                onChange={(e) => numberHandler(e)}
+                type="number"
+                placeholder="Phone Number"
+              />
+            </Form.Group>
+          </div>
+          <div className=" w-50">
+            <Form.Group
+              className="form-control mb-3"
+              controlId="formBasicMessage"
+            >
+              <Form.Control
+                className="form-control"
+                defaultValue={message}
+                onChange={(e) => messageHandler(e)}
+                type="text"
+                placeholder="Write Message"
+                rows="3"
+              />
+            </Form.Group>
+          </div>
+        </div>
         <div className="d-flex justify-content-center">
           <Button
             onClick={() => showFormData()}

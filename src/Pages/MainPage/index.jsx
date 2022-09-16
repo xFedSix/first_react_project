@@ -6,6 +6,7 @@ import OurServices from "../../templates/OurServices";
 import PricingPlan from "../../templates/PricingPlan";
 import OurTeam from "../../templates/OurTeamMembers";
 import Blog from "../../templates/Blog";
+import ContactUs from "../../templates/ContactUs";
 
 const MainPage = () => {
   return (
@@ -19,6 +20,7 @@ const MainPage = () => {
       <PricingPlan />
       <OurTeam />
       <Blog />
+      <ContactUs />
     </>
   );
 };
