@@ -11,7 +11,7 @@ const BlogComponent = ({
   className,
 }) => {
   return (
-    <div key={id} className={className}>
+    <div className={className}>
       <div>
         <img alt="img" src={image}></img>
       </div>

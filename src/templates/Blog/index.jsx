@@ -15,8 +15,9 @@ const Blog = () => {
       </div>
       <div className="blog__data row">
         {BLOG_DATA.map(
-          ({ image, title, subtitle, date, devtext, className }) => (
+          ({ id, image, title, subtitle, date, devtext, className }) => (
             <BlogComponent
+              key={id}
               image={image}
               title={title}
               subtitle={subtitle}
