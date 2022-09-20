@@ -6,10 +6,9 @@ const BlogComponent = ({
   image,
   date,
   devtext,
-  className,
 }) => {
   return (
-    <div className={className}>
+    <div className="block">
       <div className="col-sm-12 col-lg-4 d-flex justify-content-around">
         <img alt="img" src={image}></img>
       </div>

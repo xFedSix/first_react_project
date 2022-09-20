@@ -1,9 +1,7 @@
 import React from "react";
 import "./styles.scss";
 
-const ButtonComponent = (props) => {
-  const { label, buttonClass, buttonClick } = props;
-
+const ButtonComponent = ({ label, buttonClass, buttonClick }) => {
   return (
     <>
       <button onClick={buttonClick} className={buttonClass}>

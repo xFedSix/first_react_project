@@ -3,17 +3,16 @@
 .blog {
   background-color: #e4f1fd;
 }
-.reversed {
+.block:nth-child(2n) {
   flex-direction: row-reverse;
-  justify-content: flex-end;
 }
 
 .block {
   display: flex;
   justify-content: space-around;
 }
-.block img {
-  max-height: 425px;
+.blog__data img {
+  max-height: 415px;
 }
 .blog__data-dev {
   display: flex;
@@ -30,7 +29,7 @@
       flex-direction: column;
       align-items: center;
     }
-    .block img {
+    .blog__data img {
       max-height: 200px;
     }
   }

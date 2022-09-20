@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 import BlogComponent from "../../components/BlogComponent";
 import TitleComponent from "../../components/TitleComponent";
 import ButtonComponent from "../../components/ButtonComponent";
 import { TITLE, BLOG_DATA } from "./constants.js";
+import { BUTTON_LABEL } from "../../components/ButtonComponent/constants";
 
 import "./styles.scss";
 import { useDispatch, useSelector } from "react-redux";
@@ -14,7 +15,11 @@ const Blog = () => {
   const getBlogFromAPI = fetchBlogMiddleware();
   const blogs = useSelector((state) => state.fetchBlogReducer.blogs);
 
-  console.log(blogs);
+  const [data, setData] = useState();
+  function deleteBlogData(id) {
+    const filteredPosts = data.filter((item) => item.id !== id);
+    setData(filteredPosts);
+  }
   return (
     <div className="blog">
       <div className="p-4">
@@ -49,7 +54,7 @@ const Blog = () => {
         <ButtonComponent
           buttonClick={() => getBlogFromAPI(dispatch)}
           buttonClass="button__large"
-          label="MORE VIEW"
+          label={BUTTON_LABEL.showMore}
         />
       </div>
     </div>
