@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import BlogComponent from "../../components/BlogComponent";
 import TitleComponent from "../../components/TitleComponent";
@@ -15,11 +15,6 @@ const Blog = () => {
   const getBlogFromAPI = fetchBlogMiddleware();
   const blogs = useSelector((state) => state.fetchBlogReducer.blogs);
 
-  const [data, setData] = useState();
-  function deleteBlogData(id) {
-    const filteredPosts = data.filter((item) => item.id !== id);
-    setData(filteredPosts);
-  }
   return (
     <div className="blog">
       <div className="p-4">
