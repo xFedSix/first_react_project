@@ -2,6 +2,7 @@ import img1 from "./images/image1.svg";
 import img2 from "./images/image2.svg";
 import img3 from "./images/image3.svg";
 
+export const URL = "https://fakestoreapi.com/products?limit=4";
 export const TITLE = {
   title: "Blog",
   subtitle:

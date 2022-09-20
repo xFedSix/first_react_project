@@ -1,8 +1,6 @@
 import React from "react";
-import "./styles.scss";
 
 const BlogComponent = ({
-  id,
   title,
   subtitle,
   image,
@@ -12,7 +10,7 @@ const BlogComponent = ({
 }) => {
   return (
     <div className={className}>
-      <div>
+      <div className="col-sm-12 col-lg-4 d-flex justify-content-around">
         <img alt="img" src={image}></img>
       </div>
       <div className="col-sm-12 col-lg-4 d-flex flex-column justify-content-center">

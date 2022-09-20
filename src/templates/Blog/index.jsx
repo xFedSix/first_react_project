@@ -6,14 +6,21 @@ import ButtonComponent from "../../components/ButtonComponent";
 import { TITLE, BLOG_DATA } from "./constants.js";
 
 import "./styles.scss";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchBlogMiddleware } from "../../components/store/middleware";
 
 const Blog = () => {
+  const dispatch = useDispatch();
+  const getBlogFromAPI = fetchBlogMiddleware();
+  const blogs = useSelector((state) => state.fetchBlogReducer.blogs);
+
+  console.log(blogs);
   return (
     <div className="blog">
       <div className="p-4">
         <TitleComponent title={TITLE.title} subtitle={TITLE.subtitle} />
       </div>
-      <div className="blog__data row">
+      <div className="blog__data container ms-0 row ">
         {BLOG_DATA.map(
           ({ id, image, title, subtitle, date, devtext, className }) => (
             <BlogComponent
@@ -27,10 +34,23 @@ const Blog = () => {
             />
           )
         )}
+        {blogs.map(({ id, image, title, subtitle, className }) => (
+          <BlogComponent
+            key={id}
+            image={image}
+            title={title}
+            subtitle={subtitle}
+            className={className}
+          />
+        ))}
       </div>
 
       <div className="d-flex justify-content-center p-4">
-        <ButtonComponent buttonClass="button__large" label="MORE VIEW" />
+        <ButtonComponent
+          buttonClick={() => getBlogFromAPI(dispatch)}
+          buttonClass="button__large"
+          label="MORE VIEW"
+        />
       </div>
     </div>
   );
