@@ -2,8 +2,7 @@ import React from "react";
 
 import "./styles.scss";
 
-const TitleComponent = (props) => {
-  const { title, subtitle } = props;
+const TitleComponent = ({ title, subtitle }) => {
   return (
     <>
       <div className="headline">
